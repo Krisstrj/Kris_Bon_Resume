@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial scale=1.0"/>
+        <title>MY RESUME</title>
+        <link rel="stylesheet" href="style.css">
+        <head>           
+    </head>
+    <body>
+        
+        <header>
+            <div class="resume-header">
+                <h1>MY PROJECTS</h1>
+                <!-- Add any personal info or header content here if needed -->
+            </div>
+            <nav class="nav-box">
+                <a href="index.html" class="nav-btn">Home</a>
+                <a href="resume.html" class="nav-btn">Resume</a>
+                <a href="projects.html" class="nav-btn">Projects</a>
+                <a href="contact.html" class="nav-btn">Contact</a>
+                <button class="nav-menu-icon" onclick="document.querySelector('.sidebar-nav').style.display='flex'">&#9776;</button>
+            </nav>
+            <div class="sidebar-nav" style="display:none;">
+                <button class="close-sidebar" onclick="document.querySelector('.sidebar-nav').style.display='none'">&times;</button>
+                <a href="index.html" class="nav-btn">Home</a>
+                <a href="resume.html" class="nav-btn">Resume</a>
+                <a href="projects.html" class="nav-btn">Projects</a>
+                <a href="contact.html" class="nav-btn">Contact</a>
+            </div>
+        </header>
+     
+        <main>
+            <div class="article-box">
+                <section class="education Subjects" aria-labelledby="education">
+                    <h2>EDUCATIONAL BACKGROUND</h2>
+                    <h3>COLLEGE</h3>
+                    <p>School : Sorsogon State University</p>
+                    <p>Course : Bachelor of Science in Information Technology</p>
+                    <p>Web and Mobile Applications</p>
+                    <p>2023 - 2027</p>  
+                 </section>
+            </div>
+        </main>
+        <script>
+            document.addEventListener('click', function(e) {
+                const sidebar = document.querySelector('.sidebar-nav');
+                const menuIcon = document.querySelector('.nav-menu-icon');
+                if (sidebar && sidebar.style.display === 'flex' && !sidebar.contains(e.target) && e.target !== menuIcon) {
+                    sidebar.style.display = 'none';
+                }
+            });
+        </script>
+    </body> 
+    <footer>
+            <div class="footer-box">
+                <p>&copy; 2025 Kris Bon. All rights reserved.</p>
+            </div>
+        </footer>
+</html>
