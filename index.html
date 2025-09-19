@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About - Kris Bon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="resume-header">
+            <h1 style="text-align: center;font-size:x-large;">ABOUT ME </h1>
+           
+        </div>
+        <nav class="nav-box">
+            <a href="index.html" class="nav-btn">About</a>
+            <a href="resume.html" class="nav-btn">Resume</a>
+            <a href="projects.html" class="nav-btn">Projects</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+            <button class="nav-menu-icon" onclick="document.querySelector('.sidebar-nav').style.display='flex'">&#9776;</button>
+        </nav>
+       
+    </header>
+    <main>
+        <div class="aboutme-box">
+            <section class="Subjects">
+                <div class="about-me-info">
+                    <img src="images/KRIS .jpg" alt="Kris Bon" class="aboutme-photo">
+                    <div class="info-text">
+                        <p>
+                           <h2>My Skills:</h2> 
+                            <ul>
+                                <li>Videography</li>
+                                <li>Photography & Editing</li>
+                                <li>Video Editing/ Film Making</li>
+                                <li>Graphics Design</li>
+
+                            </ul>
+                             <h2>Experieces : </h2>
+                            <ul>
+                                <li>Events Photographer</li>
+                                <li>Sorsu BC Kaagapay Organization Media Officer</li>
+                                <li>SorSU GAD Photography  Competition</li>
+                                    <ul>
+                                        <li>2nd Place Award</li>
+                                        <li>People's Choice Award</li>
+                                    </ul>
+                            
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-box">
+            <p>&copy; 2025 Kris Bon. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('click', function(e) {
+            const sidebar = document.querySelector('.sidebar-nav');
+            const menuIcon = document.querySelector('.nav-menu-icon');
+            if (sidebar && sidebar.style.display === 'flex' && !sidebar.contains(e.target) && e.target !== menuIcon) {
+                sidebar.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
