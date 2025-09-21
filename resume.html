@@ -11,7 +11,7 @@
         
         <header>
            <div class="resume-header">
-                <h1>MY RESUME</h1>
+                <h1 style="text-align: center;font-size:x-large;">MY RESUME</h1>
                 <div class="personal-info">
                     <img src="images/Kris.jpg" alt="profile-photo" class="profile-photo">
                     <div class="info-text">
@@ -29,11 +29,19 @@
             </div>
             <!-- Navigation Box Start -->
             <nav class="nav-box">
-                <a href="index.html" class="nav-btn">About </a>
+                <a href="index.html" class="nav-btn">About</a>
                 <a href="resume.html" class="nav-btn">Resume</a>
                 <a href="projects.html" class="nav-btn">Projects</a>
                 <a href="contact.html" class="nav-btn">Contact</a>
+                <button class="nav-menu-icon" onclick="document.querySelector('.sidebar-nav').style.display='flex'">&#9776;</button>
             </nav>
+            <div class="sidebar-nav" style="display:none;">
+                <button class="close-sidebar" onclick="document.querySelector('.sidebar-nav').style.display='none'">&times;</button>
+                <a href="index.html" class="nav-btn">About</a>
+                <a href="resume.html" class="nav-btn">Resume</a>
+                <a href="projects.html" class="nav-btn">Projects</a>
+                <a href="contact.html" class="nav-btn">Contact</a>
+            </div>
             <!-- Navigation Box End -->
         </header>
         <main>
