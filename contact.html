@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact - Kris Bon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="resume-header">
+            <h1 style="text-align: center;font-size:x-large;" >CONTACT</h1>
+            
+        </div>
+        <nav class="nav-box">
+            <a href="index.html" class="nav-btn">About</a>
+            <a href="resume.html" class="nav-btn">Resume</a>
+            <a href="projects.html" class="nav-btn">Projects</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+            <button class="nav-menu-icon" onclick="document.querySelector('.sidebar-nav').style.display='flex'">&#9776;</button>
+        </nav>
+        <div class="sidebar-nav" style="display:none;">
+            <button class="close-sidebar" onclick="document.querySelector('.sidebar-nav').style.display='none'">&times;</button>
+            <a href="index.html" class="nav-btn">About</a>
+            <a href="resume.html" class="nav-btn">Resume</a>
+            <a href="projects.html" class="nav-btn">Projects</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+        </div>
+    </header>
+    <main>
+        <div class="article-box">
+            <section class="Subjects">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> kabon@sorsu.edu.ph</p>
+                <p><strong>Phone:</strong> 09665071251</p>
+                <p><strong>Address:</strong> Rizal Gubat, Sorsogon</p>
+                <p>
+                    Feel free to reach out to me for any inquiries, collaborations, or just to say hello!
+                </p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/krs.strj" target="_blank" title="Instagram">
+                        <img src="images\instagram.png" alt="Instagram" />
+                    </a>
+                    <a href="https://facebook.com/krzzzyyy" target="_blank" title="Facebook">
+                        <img src="images\facebook.png" alt="Facebook" />
+                    </a>
+                    <a href="https://linkedin.com/in/kris-angela-bon-6ba1b9310" target="_blank" title="LinkedIn">
+                        <img src="images\linkedin.png" alt="LinkedIn" />
+                    </a>
+                    <a href="mailto:kabon@sorsu.edu.ph" target="_blank" title="Gmail">
+                        <img src="images\gmail-logo.png" alt="Gmail" />
+                    </a>
+                    <a href="https://t.me/Krxzzyyy" target="_blank" title="Telegram">
+                        <img src="images\telegram.png" alt="Telegram" />
+                    </a>
+                    <a href="https://t.me/Krisstrj" target="_blank" title="Github">
+                        <img src="images\github.png" alt="Github" />
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+   
+    <script>
+        document.addEventListener('click', function(e) {
+            const sidebar = document.querySelector('.sidebar-nav');
+            const menuIcon = document.querySelector('.nav-menu-icon');
+            if (sidebar && sidebar.style.display === 'flex' && !sidebar.contains(e.target) && e.target !== menuIcon) {
+                sidebar.style.display = 'none';
+            }
+        });
+    </script>
+    <footer>
+        <div class="footer-box">
+            <p>&copy; 2025 Kris Bon. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
